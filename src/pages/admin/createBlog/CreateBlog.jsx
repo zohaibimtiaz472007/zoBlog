@@ -57,7 +57,7 @@ function CreateBlog() {
           toast.success("Post Added Successfully");
         } catch (error) {
           toast.error(error.message);
-          console.log(error);
+          // console.log(error);
         }
       });
     });
@@ -182,17 +182,13 @@ function CreateBlog() {
         />
 
         {/* Submit Button  */}
-        <Button
-          className="w-full mt-5"
+        <button
+          className="w-full mt-5 py-2 rounded bg-blue-500 hover:bg-blue-700 text-white font-bold"
           onClick={addPost}
-          style={{
-            background:
-              mode === "dark" ? "rgb(226, 232, 240)" : "rgb(30, 41, 59)",
-            color: mode === "dark" ? "rgb(30, 41, 59)" : "rgb(226, 232, 240)",
-          }}
+          
         >
           Send
-        </Button>
+        </button>
 
         {/* Preview Section  */}
         <div className="">
